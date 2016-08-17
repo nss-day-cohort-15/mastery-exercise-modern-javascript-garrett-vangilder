@@ -1,4 +1,25 @@
+body {
+    text-align: center;
+}
+#introPhoto {
+    text-align: center;
+    height: 400px;
+}
 h2 {
-  color: green;
+    color: green;
+    text-align: center;
+}
+.toClasses {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+}
+.classBTN {
+    border-color: black;
+    margin: .5rem;
+    height: 10rem;
+}
+
+.placeForClassesGG {
   text-align: center;
 }

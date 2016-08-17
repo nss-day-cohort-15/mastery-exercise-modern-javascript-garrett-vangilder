@@ -1,13 +1,84 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>ROBOT BATTLE DOME </title>
+    <title>ROBOT BATTLE DOME </title>
 </head>
-  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="quiz.css">
+<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="quiz.css">
+
 <body>
-  <h2>BATTLE DOME</h2>
-<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="quiz.js"></script>
+    <div class="landingPage">
+        <img id="introPhoto" src="img/explosion_robot.jpg" alt="explosion" />
+        <h2>BATTLE DOME</h2>
+        <h3>Who are you?</h3>
+        <input class="playerName"></input>
+        <button class="buttonForGoodGuy">confirm</button>
+        <div class="confirmationSpot hidden">Your name is </div>
+
+        <h3>Who is your enemy?</h3>
+        <input class="enemyName"></input>
+        <button class="buttonForBadGuy">confirm</button>
+        <div class="confirmationSpotBG hidden">Your enemy's name is </div>
+
+        <button class="toClasses">Pick your class</button>
+    </div>
+
+    <div class="classPagePlayer hidden">
+        <h3>What kind of robot are you?</h3>
+        <button class="back">Back</button>
+        <div class="placeForClassesGG container text-center">
+
+            <div class="row">
+                <button class="btn classBTN col-sm-3">Skeleton BOT</button>
+                <button class="btn classBTN col-sm-3">Vampire BOT</button>
+                <button class="btn classBTN col-sm-3">Space Cowboy BOT</button>
+            </div>
+
+            <div class="row">
+                <button class="btn classBTN col-sm-3">Astro BOT</button>
+                <button class="btn classBTN col-sm-3">Ranger BOT</button>
+                <button class="btn classBTN col-sm-3">Rodeo Superstar BOT</button>
+            </div>
+
+        </div>
+        <button class="toBGClasses">Select Your Enemy's Class</button>
+    </div>
+    <div class="classPageBagGuy hidden">
+        <h3>What kind of robot are you fighting?</h3>
+        <button class="back">Back</button>
+
+        <div class="placeForClassesBG container text-center">
+
+            <div class="row">
+                <button class="btn classBTN col-sm-3">Skeleton BOT</button>
+                <button class="btn classBTN col-sm-3">Vampire BOT</button>
+                <button class="btn classBTN col-sm-3">Space Cowboy BOT</button>
+            </div>
+
+            <div class="row">
+                <button class="btn classBTN col-sm-3">Astro BOT</button>
+                <button class="btn classBTN col-sm-3">Ranger BOT</button>
+                <button class="btn classBTN col-sm-3">Rodeo Superstar BOT</button>
+            </div>
+
+        </div>
+        <button class="toBattleGround">Ready to fight?</button>
+
+    </div>
+    <div class="battleGround hidden">
+        <h3>FIGHT!</h3>
+        <div class="areaForPlayer col-md-5">
+
+            <button>ATTACK</button>
+        </div>
+        <div class="areaForBG col-md-5">
+
+        </div>
+    </div>
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="classes.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
+
 </html>
