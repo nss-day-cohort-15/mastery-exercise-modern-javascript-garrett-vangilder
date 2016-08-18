@@ -1,6 +1,8 @@
 body {
+    /*color:white;*/
     text-align: center;
 }
+
 #introPhoto {
     text-align: center;
     height: 400px;
@@ -16,10 +18,28 @@ h2 {
 }
 .classBTN {
     border-color: black;
-    margin: .5rem;
-    height: 10rem;
+    display: block;
+}
+.toBattleGround {
+  margin-top: 1rem;
+}
+.toBGClasses {
+  margin-top: 1rem;
+}
+.back {
+  margin-bottom: 1rem;
 }
 
 .placeForClassesGG {
   text-align: center;
+}
+
+.game {
+  /*background-color: blue;*/
+  height: 90%;
+  width:90%;
+  border: solid 5px black;
+  margin: auto;
+  padding: 1rem;
+  margin-right: auto;
 }
