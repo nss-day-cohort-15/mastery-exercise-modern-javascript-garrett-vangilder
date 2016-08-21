@@ -6,6 +6,7 @@ var RobotDome = (function(robotdome) {
         var nameBG;
         var classBG;
 
+        $('.toClasses').prop('disabled', true);
         // RENAME MAIN PLAYER
         $(".buttonForGoodGuy").on('click', function() {
                 robotdome.name = $('.playerName').val();
@@ -15,7 +16,9 @@ var RobotDome = (function(robotdome) {
         $(".buttonForBadGuy").on('click', function() {
                 robotdome.nameBG = $('.enemyName').val();
                 $('.confirmationSpotBG').append('<strong>' + robotdome.nameBG + '</strong>').toggleClass('hidden')
+                  $('.toClasses').prop('disabled', false);
             })
+            $('.toBGClasses').prop('disabled', true);
             //NEXT SCREEN GG Classes
         $('.toClasses').on('click', function() {
             $('.landingPage').toggleClass('hidden');
@@ -28,6 +31,7 @@ var RobotDome = (function(robotdome) {
                 $('.classPageBagGuy').toggleClass('hidden');
             })
             // TO BATTLE GROUND
+            $('.toBattleGround').prop('disabled', true)
         $('.toBattleGround').on('click', function() {
             $('.classPageBagGuy').toggleClass('hidden');
             $('.battleGround').toggleClass('hidden');
@@ -45,6 +49,16 @@ var RobotDome = (function(robotdome) {
             $('.BGImage').html(badGuy.image)
         })
 
+        // BACK BUTTON FUNCTIONALITY
+        $('.backToNames').on('click', function() {
+          $('.landingPage').toggleClass('hidden');
+          $('.classPagePlayer').toggleClass('hidden');
+        })
+        $('.backToGGClasses').on('click', function() {
+          $('.classPagePlayer').toggleClass('hidden')
+          $('.classPageBagGuy').toggleClass('hidden')
+        })
+
         // PLAYER ATTACK FUNCTIONALITY
         robotdome.playerAttack = function() {
             badGuy.health = badGuy.health - player.damage;
@@ -55,10 +69,13 @@ var RobotDome = (function(robotdome) {
             }
             if (player.health <= 0) {
                 alert('YOU LOSE');
+                $('.battleLogUpDate').append( player.name +" was defeated by " + badGuy.name );
+                $('.attack').prop('disabled', true);
             }
             if (badGuy.health <= 0) {
                 alert('YOU WIN!');
-                $('.battleLogUpDate').append("YOU WIN!!");
+                $('.battleLogUpDate').append( player.name + " defeated " + badGuy.name);
+                $('.attack').prop('disabled', true);
 
             }
         }
@@ -71,6 +88,7 @@ var RobotDome = (function(robotdome) {
             if (player.health <= 0) {
                 alert('YOU LOSE!')
                 $('.battleLogUpDate').append("YOU LOSE!");
+                $('.attack').prop('disabled', true);
 
             }
         }
