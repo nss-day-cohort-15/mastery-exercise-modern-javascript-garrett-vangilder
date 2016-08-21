@@ -11,6 +11,8 @@ var RobotDome = (function(robotdome) {
         $(".buttonForGoodGuy").on('click', function() {
                 robotdome.name = $('.playerName').val();
                 $('.confirmationSpot').append('<strong>' + robotdome.name + '</strong>').toggleClass('hidden')
+                $('.badGuyNameArea').toggleClass('hidden');
+                $('.toClasses').toggleClass('hidden');
             })
             // RENAME BAD GUY
         $(".buttonForBadGuy").on('click', function() {
@@ -86,7 +88,7 @@ var RobotDome = (function(robotdome) {
             $('.healthGG').html(player.health)
             robotdome.battleLogUpDateBG();
             if (player.health <= 0) {
-                alert('YOU LOSE!')
+                alert('YOU LOSE!' + '<br>')
                 $('.battleLogUpDate').append("YOU LOSE!");
                 $('.attack').prop('disabled', true);
 
