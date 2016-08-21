@@ -53,7 +53,7 @@ $(document).ready(function() {
         this.subtype = 'Skeleton Robot'
         this.health = randomHealth(50, 75);
         this.damage = randomAttack(35,50);
-        this.image = '<img class="Photo" src="img/terminator.jpg" alt="enemy photo" />';
+        this.image = '<img class="Photo" src="img/terminator.jpg" alt="skeleton" />';
     }
     robotdome.SkeletonBot.prototype = new robotdome.ZombieRobot();
     //
@@ -61,7 +61,7 @@ $(document).ready(function() {
         this.subtype = 'Vampire Robot';
         this.health = randomHealth(40, 65);
         this.damage = randomAttack(45,55);
-        this.image = '';
+        this.image = '<img class="Photo" src="img/spaceVampire.jpg" alt="vampire" />';
     }
     robotdome.VampireBot.prototype = new robotdome.ZombieRobot();
     // // 2 Specific Space Robot Types
@@ -70,7 +70,7 @@ $(document).ready(function() {
         this.subtype = 'Space Cowboy'
         this.health = randomHealth(75, 100);
         this.damage = randomAttack(40,50);
-        this.image = '';
+        this.image = '<img class="Photo image" src="img/spaceCowboy.jpg" alt="vampire" />';
     }
     robotdome.SpaceCowboyBot.prototype = new robotdome.SpaceRobot();
     //
@@ -78,7 +78,8 @@ $(document).ready(function() {
         this.subtype = "Astronaut";
         this.health = randomHealth(70, 90);
         this.damage = randomAttack(50,60);
-        this.image = '';
+        this.image = '<img class="Photo" src="img/astroBot.jpg" alt="vampire" />';
+
     }
     robotdome.AstroBot.prototype = new robotdome.SpaceRobot();
     //
@@ -87,7 +88,8 @@ $(document).ready(function() {
         this.subtype = 'Ranger'
         this.health = randomHealth(50, 70);
         this.damage = randomAttack(60,70);
-        this.image = '';
+        this.image = '<img class="Photo" src="img/spaceRanger.jpg" alt="vampire" />';
+
     }
     robotdome.RangerBot.prototype = new robotdome.CowboyRobot();
 
@@ -95,7 +97,7 @@ $(document).ready(function() {
         this.subtype = 'Rodeo Superstar'
         this.health = randomHealth(40, 60);
         this.damage = randomAttack(70,80);
-        this.image = '';
+        this.image = '<img class="Photo" src="img/rodeoBot.jpg" alt="vampire" />';
     }
     robotdome.RodeoBot.prototype = new robotdome.CowboyRobot();
 

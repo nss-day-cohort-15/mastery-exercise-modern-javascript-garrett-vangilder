@@ -47,3 +47,12 @@ h2 {
 .attack {
   margin-top: 1rem;
 }
+
+.Photo {
+  heigh:400px;
+}
+
+.Photo  {
+    height:300px;
+    width: auto;
+}
