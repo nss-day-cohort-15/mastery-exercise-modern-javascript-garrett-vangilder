@@ -26,12 +26,7 @@ $(document).ready(function() {
       return Math.floor(Math.random() * (max - min)) + min;
     }
 
-  //   gauntlet.GuildHall.PlayerClass = function() {
-  // this.name = "Beggar";
-  // this.healthBonus = 0;
-  // this.strengthBonus = 0;
-  // this.intelligenceBonus = 0;
-  // this.magical = false;
+
 
     // 3 ROBOT TYPES
     robotdome.ZombieRobot = function() {
