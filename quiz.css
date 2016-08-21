@@ -2,7 +2,6 @@ body {
     /*color:white;*/
     text-align: center;
 }
-
 #introPhoto {
     text-align: center;
     height: 400px;
@@ -21,38 +20,33 @@ h2 {
     display: block;
 }
 .toBattleGround {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 .toBGClasses {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 .back {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
-
 .placeForClassesGG {
-  text-align: center;
+    text-align: center;
 }
-
 .game {
-  /*background-color: blue;*/
-  height: 90%;
-  width:90%;
-  border: solid 5px black;
-  margin: auto;
-  padding: 1rem;
-  margin-right: auto;
+    /*background-color: blue;*/
+    height: 90%;
+    width: 90%;
+    border: solid 5px black;
+    margin: auto;
+    padding: 1rem;
+    margin-right: auto;
 }
-
 .attack {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
-
 .Photo {
-  heigh:400px;
+    heigh: 400px;
 }
-
-.Photo  {
-    height:300px;
+.Photo {
+    height: 300px;
     width: auto;
 }
