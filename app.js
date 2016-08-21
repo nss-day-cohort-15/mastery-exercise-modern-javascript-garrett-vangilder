@@ -44,7 +44,7 @@ $(document).ready(function() {
       $('.healthBG').append(badGuy.health)
       $('.BGImage').html(badGuy.image)
     })
-    
+
     // PLAYER ATTACK FUNCTIONALITY
     robotdome.playerAttack = function() {
       if(player.health <= 0) {

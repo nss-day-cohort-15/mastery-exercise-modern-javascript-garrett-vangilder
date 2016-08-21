@@ -12,6 +12,20 @@ $(document).ready(function() {
         this.health = 0;
         this.damage = 0;
     }
+    // Returns a random integer between min (included) and max (excluded)
+    // Using Math.round() will give you a non-uniform distribution!
+    function randomHealth(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    function randomAttack(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+
   //   gauntlet.GuildHall.PlayerClass = function() {
   // this.name = "Beggar";
   // this.healthBonus = 0;
@@ -42,16 +56,16 @@ $(document).ready(function() {
     //
     robotdome.SkeletonBot = function() {
         this.subtype = 'Skeleton Robot'
-        this.health = 50;
-        this.damage = 100;
+        this.health = randomHealth(50, 75);
+        this.damage = randomAttack(35,50);
         this.image = '<img class="Photo" src="img/terminator.jpg" alt="enemy photo" />';
     }
     robotdome.SkeletonBot.prototype = new robotdome.ZombieRobot();
     //
     robotdome.VampireBot = function() {
         this.subtype = 'Vampire Robot';
-        this.health = 40;
-        this.damage = 120;
+        this.health = randomHealth(40, 65);
+        this.damage = randomAttack(45,55);
         this.image = '';
     }
     robotdome.VampireBot.prototype = new robotdome.ZombieRobot();
@@ -59,16 +73,16 @@ $(document).ready(function() {
     //
     robotdome.SpaceCowboyBot = function() {
         this.subtype = 'Space Cowboy'
-        this.health = 100;
-        this.damage = 50;
+        this.health = randomHealth(75, 100);
+        this.damage = randomAttack(40,50);
         this.image = '';
     }
     robotdome.SpaceCowboyBot.prototype = new robotdome.SpaceRobot();
     //
     robotdome.AstroBot = function() {
         this.subtype = "Astronaut";
-        this.health = 90;
-        this.damage = 60;
+        this.health = randomHealth(70, 90);
+        this.damage = randomAttack(50,60);
         this.image = '';
     }
     robotdome.AstroBot.prototype = new robotdome.SpaceRobot();
@@ -76,16 +90,16 @@ $(document).ready(function() {
     // // 2 Specific Cowboy Robot Types
     robotdome.RangerBot= function() {
         this.subtype = 'Ranger'
-        this.health = 70;
-        this.damage = 70;
+        this.health = randomHealth(50, 70);
+        this.damage = randomAttack(60,70);
         this.image = '';
     }
     robotdome.RangerBot.prototype = new robotdome.CowboyRobot();
 
     robotdome.RodeoBot = function() {
         this.subtype = 'Rodeo Superstar'
-        this.health = 60;
-        this.damage = Math.random() //80
+        this.health = randomHealth(40, 60);
+        this.damage = randomAttack(70,80);
         this.image = '';
     }
     robotdome.RodeoBot.prototype = new robotdome.CowboyRobot();
