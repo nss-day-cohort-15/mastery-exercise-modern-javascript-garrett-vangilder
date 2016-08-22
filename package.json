@@ -1,23 +1,26 @@
 {
-    "name": "mastery-exercise-modern-javascript-garrett-vangilder",
-    "version": "1.0.0",
-    "description": "## Setup",
-    "main": "quiz.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/nss-day-cohort-15/mastery-exercise-modern-javascript-garrett-vangilder.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/nss-day-cohort-15/mastery-exercise-modern-javascript-garrett-vangilder/issues"
-    },
-    "homepage": "https://github.com/nss-day-cohort-15/mastery-exercise-modern-javascript-garrett-vangilder#readme",
-    "devDependencies": {
-        "grunt": "^1.0.1",
-        "jasmine": "^2.4.1"
-    }
+  "name": "mastery-exercise-modern-javascript-garrett-vangilder",
+  "version": "1.0.0",
+  "description": "## Setup",
+  "main": "quiz.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nss-day-cohort-15/mastery-exercise-modern-javascript-garrett-vangilder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nss-day-cohort-15/mastery-exercise-modern-javascript-garrett-vangilder/issues"
+  },
+  "homepage": "https://github.com/nss-day-cohort-15/mastery-exercise-modern-javascript-garrett-vangilder#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jasmine": "^2.4.0",
+    "jasmine": "^2.4.1"
+  }
 }

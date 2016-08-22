@@ -62,7 +62,7 @@ var RobotDome = (function(robotdome) {
 
         $('.VampireBG').on('click', function() {
             badGuy = new RobotDome.VampireBot();
-            player.name = RobotDome.nameBG;
+            badGuy.name = RobotDome.nameBG;
             console.log(badGuy)
             $('.toBattleGround').prop('disabled', false)
 
