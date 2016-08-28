@@ -302,7 +302,6 @@ var RobotDome = (function(robotdome) {
             $('.healthGG').html(player.health);
             robotdome.battleLogUpDateBG();
             if (player.health <= 0) {
-                alert('YOU LOSE!' + '<br>');
                 $('.battleLogUpDate').append("YOU LOSE!");
                 $('.attack').prop('disabled', true);
 

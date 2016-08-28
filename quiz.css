@@ -1,6 +1,13 @@
 body {
-    /*color:white;*/
+    color:black;
     text-align: center;
+}
+body input {
+  color: black;
+}
+
+.btn {
+  border: 1px black solid;
 }
 #introPhoto {
     text-align: center;
@@ -32,13 +39,17 @@ h2 {
     text-align: center;
 }
 .game {
-    /*background-color: blue;*/
+    background-color: green;
     height: 90%;
     width: 90%;
     border: solid 5px black;
     margin: auto;
     padding: 1rem;
     margin-right: auto;
+    overflow: scroll;
+}
+.backBtn {
+  margin-bottom: 2rem;
 }
 .attack {
     margin-top: 1rem;
