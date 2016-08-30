@@ -1,0 +1,63 @@
+body {
+    color:black;
+    text-align: center;
+}
+body input {
+  color: black;
+}
+
+.btn {
+  border: 1px black solid;
+}
+#introPhoto {
+    text-align: center;
+    height: 400px;
+}
+h2 {
+    color: green;
+    text-align: center;
+}
+.toClasses {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+}
+.classBTN {
+    border-color: black;
+    display: block;
+}
+.toBattleGround {
+    margin-top: 1rem;
+}
+.toBGClasses {
+    margin-top: 1rem;
+}
+.back {
+    margin-bottom: 1rem;
+}
+.placeForClassesGG {
+    text-align: center;
+}
+.game {
+    background-color: green;
+    height: 90%;
+    width: 90%;
+    border: solid 5px black;
+    margin: auto;
+    padding: 1rem;
+    margin-right: auto;
+    overflow: scroll;
+}
+.backBtn {
+  margin-bottom: 2rem;
+}
+.attack {
+    margin-top: 1rem;
+}
+.Photo {
+    heigh: 400px;
+}
+.Photo {
+    height: 300px;
+    width: auto;
+}
