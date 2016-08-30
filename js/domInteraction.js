@@ -40,13 +40,13 @@ var RobotDome = (function(robotdome) {
             // BATTLEGROUND FUNCTIONALITY
             $('.nameGG').append(player.name);
             $('.classGG').append(player.subtype);
-            $('.healthGG').append(player.health);
+            $('.healthGG').html("Player Health: "+ player.health);
             $('.playerImage').html(player.image);
 
 
             $('.nameBG').append(badGuy.name);
             $('.classBG').append(badGuy.subtype);
-            $('.healthBG').append(badGuy.health);
+            $('.healthBG').html("Enemy Health: "+ badGuy.health);
             $('.BGImage').html(badGuy.image);
         });
 
@@ -63,18 +63,23 @@ var RobotDome = (function(robotdome) {
         // PLAYER ATTACK FUNCTIONALITY
         robotdome.playerAttack = () => {
             badGuy.health = badGuy.health - player.damage;
-            $('.healthBG').html(badGuy.health);
+            $('.healthBG').html("Enemy Health: "+ badGuy.health);
             robotdome.battleLogUpDateGG();
             if (player.health > 0 && badGuy.health > 0) {
                 robotdome.badGuyAttack();
             }
             if (player.health <= 0) {
                 alert('YOU LOSE');
+                player.health = 0;
+                $('.healthGG').html("Player Health: "+ player.health);
+
                 $('.battleLogUpDate').append(player.name + " was defeated by " + badGuy.name);
                 $('.attack').prop('disabled', true);
             }
             if (badGuy.health <= 0) {
                 alert('YOU WIN!');
+                badGuy.health = 0;
+                $('.healthBG').html("Enemy Health: "+ badGuy.health);
                 $('.battleLogUpDate').append(player.name + " defeated " + badGuy.name);
                 $('.attack').prop('disabled', true);
             }
@@ -83,7 +88,7 @@ var RobotDome = (function(robotdome) {
         // BAD GUY ATTACK FUNCTIONALITY
         robotdome.badGuyAttack = () => {
             player.health = player.health - badGuy.damage;
-            $('.healthGG').html(player.health);
+            $('.healthGG').html("Player Health: "+ player.health);
             robotdome.battleLogUpDateBG();
             if (player.health <= 0) {
                 $('.battleLogUpDate').append("YOU LOSE!");
